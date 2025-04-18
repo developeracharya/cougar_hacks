@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .background {
+    background: url('images/cougars-logo.png') no-repeat center center;
+    background-size: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #999; /* fallback color */
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .login-container {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px 40px;
+    border-radius: 10px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+  }
+  
+  .login-form label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .login-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+  }
+  
+  .login-form button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #222;
+    color: white;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .login-form .forgot-password {
+    display: block;
+    margin-top: 12px;
+    text-align: left;
+    font-size: 14px;
+    color: #222;
+    text-decoration: none;
+  }
+  
+  .login-form .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
